@@ -1,93 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tech Innovators Summit 2023</title>
 
-  <!-- Open Graph Meta Tags (for WhatsApp/Facebook/LinkedIn preview) -->
-  <meta property="og:title" content="Tech Innovators Summit 2023" />
-  <meta property="og:description" content="Join us for the Tech Innovators Summit 2023, October 15-17 in San Francisco." />
-  <meta property="og:image" content="https://USERNAME.github.io/REPO/images/event.png" />
-  <meta property="og:url" content="https://USERNAME.github.io/REPO/" />
-  <meta property="og:type" content="website" />
+  <!-- Open Graph meta tags for sharing -->
+  <meta property="og:title" content="Tech Innovators Summit 2023">
+  <meta property="og:description" content="Join the biggest gathering of tech enthusiasts, innovators, and industry leaders!">
+  <meta property="og:image" content="https://via.placeholder.com/1200x630.png?text=Tech+Innovators+Summit+2023">
+  <meta property="og:url" content="https://aashishdev01.github.io/e-coomerce-website/">
+  <meta property="og:type" content="website">
 
-<style>
-  body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background: #f8f9fa;
-  color: #333;
-  text-align: center;
-}
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Tech Innovators Summit 2023">
+  <meta name="twitter:description" content="Join the biggest gathering of tech enthusiasts, innovators, and industry leaders!">
+  <meta name="twitter:image" content="https://via.placeholder.com/1200x630.png?text=Tech+Innovators+Summit+2023">
 
-header {
-  background: #004080;
-  color: #fff;
-  padding: 20px;
-}
-
-h1 {
-  margin: 0;
-}
-
-.banner {
-  max-width: 100%;
-  height: auto;
-  margin: 20px 0;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-}
-
-.whatsapp-btn {
-  display: inline-block;
-  background: #25d366;
-  color: #fff;
-  padding: 12px 20px;
-  text-decoration: none;
-  font-size: 18px;
-  border-radius: 8px;
-  margin-top: 20px;
-}
-
-.whatsapp-btn:hover {
-  background: #1ebe5a;
-}
-
-footer {
-  background: #004080;
-  color: white;
-  padding: 10px;
-  margin-top: 30px;
-}
-</style>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 50px;
+      background: #f0f0f0;
+    }
+    h1 {
+      color: #2E3192;
+    }
+    p {
+      font-size: 1.2rem;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      margin: 20px 0;
+      border-radius: 10px;
+    }
+    .share-btn {
+      display: inline-block;
+      background-color: #25D366;
+      color: white;
+      padding: 12px 25px;
+      font-size: 1.2rem;
+      border-radius: 50px;
+      text-decoration: none;
+      transition: background 0.3s;
+      margin-top: 20px;
+    }
+    .share-btn:hover {
+      background-color: #1ebe5d;
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <h1>Tech Innovators Summit 2023</h1>
-    <p>October 15-17, San Francisco</p>
-  </header>
 
-  <main>
-    <img src="/IMG/TATASALT.jpg" alt="Event Banner" class="banner" />
-    <p>
-      Join us for the Tech Innovators Summit 2023, where the brightest minds in
-      technology come together for a three-day event filled with keynotes,
-      networking, and innovation.
-    </p>
-    <a
-      href="https://wa.me/?text=Join%20me%20at%20Tech%20Innovators%20Summit%202023!%20https://USERNAME.github.io/REPO/"
-      target="_blank"
-      class="whatsapp-btn"
-    >
-      📲 Share on WhatsApp
-    </a>
-  </main>
+  <h1>Tech Innovators Summit 2023</h1>
+  <p>Join the biggest gathering of tech enthusiasts, innovators, and industry leaders!</p>
 
-  <footer>
-    <p>© 2023 Tech Innovators Summit</p>
-  </footer>
+  <!-- Event image -->
+  <img src="https://via.placeholder.com/600x315.png?text=Tech+Innovators+Summit+2023" alt="Tech Innovators Summit">
+
+  <!-- WhatsApp Share Button -->
+  <a href="#" class="share-btn" id="whatsappShare">Share on WhatsApp</a>
+
+  <script>
+    const whatsappBtn = document.getElementById('whatsappShare');
+    const message = encodeURIComponent(
+      "Join me at Tech Innovators Summit 2023! " + 
+      "https://aashishdev01.github.io/e-coomerce-website/"
+    );
+
+    whatsappBtn.addEventListener('click', () => {
+      const whatsappUrl = `https://api.whatsapp.com/send?text=${message}`;
+      window.open(whatsappUrl, '_blank');
+    });
+  </script>
+
 </body>
 </html>
-
